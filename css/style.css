@@ -6,17 +6,14 @@
 body{
     font-family: sans-serif;
 }
-
 /* NAVEGADOR */
 header{
     background-color: #F72A4B;
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
     padding: 25px;
     min-height: 75px;
-
 }
 .logo{
     display: flex;
@@ -27,8 +24,6 @@ header{
     width: 180px;
     cursor: pointer;
 }
-
-
 nav a{
     display: inline-block;
     text-decoration: none;
@@ -36,18 +31,12 @@ nav a{
     color: aliceblue;
     font-weight: 700;
     padding: 0 0 0 10px;
-    border-radius: 10px;
-    
-    
-    
+    border-radius: 10px;  
 }
-
 nav a:hover{
-
         background-color: rgb(255, 255, 255);
         color: black;
         transition: all ease-in-out .7s;
-    
 }
 
 /* Navegador reponsivee*/
@@ -68,8 +57,7 @@ nav a:hover{
     overflow: hidden;
     display: none;
     clip-path: circle(0% at 91% 10%);
-    transition: ease all 0.5s;
-    
+    transition: ease all 0.5s;  
 }
 .barra.open{
     clip-path: circle(150% at 91% 10%);
@@ -79,15 +67,13 @@ nav a:hover{
     padding: 15px;
     list-style: none;
     display: flex;
-    
-   
-    
+    flex-wrap: wrap;
 }
 .barra .iniciose{
     margin: 0;
     display: flex;
     text-decoration: none;
-    width: 150px;
+    width: 100%px;
     height: 30px;
     border-radius: 30px;
     font-weight: 700;
@@ -98,7 +84,6 @@ nav a:hover{
     color: black;
     margin: 0 0 20px 0;
     z-index: 100;
-
 }
 .separador{
     border-top: rgba(255, 181, 181, 0.425) 1px solid;
@@ -113,14 +98,8 @@ nav a:hover{
     border: rgba(255, 255, 255, 0.295)  2px solid;
     border-radius: 10px;
     padding: 2px 300px 2px 5px;
-    
-    
-    
-  
-
+    flex-wrap: wrap;
 }
-
-
 
 /*MEDIA QUERY REPONSIVE*/
 
@@ -135,17 +114,12 @@ nav a:hover{
     }
     .botonnav{
         display: block;
-       
-       
     }
     .botonnav i {
         padding: 0 10px 0 10px;
     }
-   
-    .logo img{
-        
+    .logo img{ 
         height: 80px;
-    
     }
     .barra{
         top:5rem; 
@@ -165,13 +139,10 @@ nav a:hover{
            display: block;
         }
         .logo img{
-           
             height: 70px;
         }
         .botonnav{
-            display: block;
-           
-           
+            display: block;  
         }
         .botonnav i {
             padding: 0 10px 0 10px;
