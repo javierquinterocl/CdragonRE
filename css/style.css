@@ -25,6 +25,7 @@ header{
 .logo img{
     height: 75px;
     width: 180px;
+    cursor: pointer;
 }
 
 nav a{
@@ -51,16 +52,49 @@ nav a:hover{
 /* Navegador reponsivee*/
 .botonnav{
     display: none;
+    cursor: pointer;
 }
+.barra {
+    position: absolute;
+    text-decoration: none;
+    right: 0rem;
+    display:  block;
+    height: 0;
+    padding: 10px;
+    top: 4rem;
+    width: 250px;
+    border-radius: 0 0 20px 20px;
+    background-color: #F72A4B;
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.barra.open{
+    height: 240px;
+}
+.barra li{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.barra li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
 
+}
 
 
 
 /*MEDIA QUERY REPONSIVE*/
 
 @media (max-width:796px){
+    /*Nav */
     header{
-        min-height: 40px;
+        min-height: 42px;
         padding: 15px;
     }
     nav{
@@ -68,19 +102,44 @@ nav a:hover{
     }
     .botonnav{
         display: block;
+       
+       
     }
+    .botonnav i {
+        padding: 0 10px 0 10px;
+    }
+   
     .logo img{
         
         height: 80px;
+    
     }
+    .barra{
+        top:5rem; 
+        width:200px;
+        display: block;
+     }
     @media (max-width:400px){
         header{
             min-height: 30px;
             padding: 10px;
         }
+        .barra{
+           top:4.3rem; 
+           width:150px;
+           display: block;
+        }
         .logo img{
            
             height: 70px;
+        }
+        .botonnav{
+            display: block;
+           
+           
+        }
+        .botonnav i {
+            padding: 0 10px 0 10px;
         }
     }
 
