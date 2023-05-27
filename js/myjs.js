@@ -9,11 +9,16 @@ boton.onclick = function (){
     menu.classList.toggle('open');
     const openyes = menu.classList.contains("open");
 
-    botonicono.classList = openyes;
+    botonicono.classList = openyes
+    ? "fa-solid fa-bars fa-xl"
+    : "fa-solid fa-bars fa-xl"
 }
 buscar.onclick = function (){
     buscador.classList.toggle("open");
     const openbuscar = buscador.classList.contains("open");
 
-    buscaricono.classList = openbuscar;
+    buscaricono.classList = openbuscar
+    ? "fa-solid fa-magnifying-glass"
+    : "fa-solid fa-magnifying-glass"
+
 }
