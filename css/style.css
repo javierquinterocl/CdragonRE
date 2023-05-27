@@ -59,11 +59,29 @@ nav a:hover{
 /*MEDIA QUERY REPONSIVE*/
 
 @media (max-width:796px){
+    header{
+        min-height: 40px;
+        padding: 15px;
+    }
     nav{
         display: none;
     }
     .botonnav{
         display: block;
+    }
+    .logo img{
+        
+        height: 80px;
+    }
+    @media (max-width:400px){
+        header{
+            min-height: 30px;
+            padding: 10px;
+        }
+        .logo img{
+           
+            height: 70px;
+        }
     }
 
 } 
