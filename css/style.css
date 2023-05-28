@@ -132,10 +132,12 @@ nav a:hover{
     width: 90%;
     height: 31px;
     right: 20px;
+    padding: 0 5px;
 }
-.buscar input .placeholder{
-color: rgb(248, 1, 1);
+.buscar ::placeholder{
+color: rgb(170, 170, 170);
 border: none;
+font-size: 0.8em;
 }
 .buscar button{
     background-color: aliceblue;
@@ -145,6 +147,10 @@ border: none;
     width: 30px;
     height: 31px;
     flex-wrap: wrap;
+    transition: all ease-in-out .5s;
+}
+.buscar button:hover{
+    transform: scale(0.7);
 }
 
 .barra li{
