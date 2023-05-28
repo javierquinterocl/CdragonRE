@@ -57,7 +57,29 @@ nav a:hover{
         
         
 }
-
+.inicios{
+    display: flex;
+    right: 0;
+    
+}
+.iniciosesion{
+    color: #000000;
+    text-decoration: none;
+    flex-wrap: wrap;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 5px;
+    justify-content: end;
+    margin: 0 5px;
+    transition: all ease-in-out .5s;
+}
+.iniciosesion:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fff  0%, #fff  50%, rgb(206, 202, 202) 40%);
+    background-size: 200% auto;
+    color: #000000;
+}
 /* Navegador reponsivee*/
 .botonnav{
     display: none;
@@ -179,7 +201,11 @@ border: none;
     color: #000000;
 }
 /* Carrusel */
+.carousel img{
+    height: 524px;
+    width: 100%;
 
+}
 .espaciador{
     display: initial;
     flex-wrap: wrap;
@@ -212,12 +238,7 @@ border: none;
 }
 
 /*MEDIA QUERY REPONSIVE*/
-@media (max-width:1081px){
-.buscarnav{
-        display: none;
-        overflow: hidden;
-    }
-}
+
 
 @media (max-width:991px){
     /*Nav */
@@ -226,6 +247,9 @@ border: none;
         padding: 3px;
     }
     nav{
+        display: none;
+    }
+    .iniciosesion{
         display: none;
     }
     /* boton buscar */
@@ -267,54 +291,63 @@ border: none;
        
         
      }
-     /* Carrusel */
-    
-    @media (max-width:576px){
+     .carousel img{
+        height: 441px;
+        width: 100%;
 
-        header{
-            min-height: 30px;
-            padding: 3px;
-        }
-        .barra{
-           top:4.3rem; 
-           width:100%;
-           height: 72%;
-           display: block;
-           z-index: 100;
-        }
-        .logo img{
-            height: 70px;
-        }
-        .botonnav{
-            display: block;  
-        }
-        .botonnav i {
-            padding: 11px 10px 0 10px;
-        }
-        .botonbuscar{
-            display: flex;
-            position: absolute;
-            right: 3rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-        .barra li a{
-            padding: 2px 160px 2px 5px;
-        }
-        .buscar{
-            top: 4rem;
-            height: 20%;
-            display: block;
-            z-index: 100;
-        }
-        .buscar input{
-            width: 85%;
-        }
-        .espaciador p{
-            font-size: calc(1vh + .1em);
-        }
     }
 
+     /* Carrusel */
 } 
+@media (max-width:576px){
+
+    header{
+        min-height: 30px;
+        padding: 3px;
+    }
+    .barra{
+       top:4.3rem; 
+       width:100%;
+       height: 72%;
+       display: block;
+       z-index: 100;
+    }
+    .logo img{
+        height: 70px;
+    }
+    .botonnav{
+        display: block;  
+    }
+    .botonnav i {
+        padding: 11px 10px 0 10px;
+    }
+    .botonbuscar{
+        display: flex;
+        position: absolute;
+        right: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .barra li a{
+        padding: 2px 160px 2px 5px;
+    }
+    .buscar{
+        top: 4rem;
+        height: 20%;
+        display: block;
+        z-index: 100;
+    }
+    .buscar input{
+        width: 85%;
+    }
+    .espaciador p{
+        font-size: calc(1vh + .1em);
+    }
+    .carousel img{
+        height: 250px;
+        width: 100%;
+
+    }
+}
