@@ -27,8 +27,14 @@ img{
     width: 180px;
     cursor: pointer;
 }
+nav{
+    display: flex;
+    position: absolute;
+    left: 13rem;
+    flex-wrap: wrap;
+}
 nav a{
-    display: inline-block;
+    
     text-decoration: none;
     cursor: pointer;
     color: aliceblue;
@@ -153,8 +159,14 @@ d-block w-100{
 }
 
 /*MEDIA QUERY REPONSIVE*/
+@media (max-width:1081px){
+.buscarnav{
+        display: none;
+        overflow: hidden;
+    }
+}
 
-@media (max-width:796px){
+@media (max-width:991px){
     /*Nav */
     header{
         min-height: 35px;
