@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
 }
 /* NAVEGADOR */
 header{
@@ -12,8 +12,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    min-height: 75px;
+    padding: 3px;
+    min-height: 60px;
 }
 .logo{
     display: flex;
@@ -29,8 +29,8 @@ nav a{
     text-decoration: none;
     cursor: pointer;
     color: aliceblue;
-    font-weight: 700;
-    padding: 0 0 0 10px;
+    font-weight: 500;
+    padding: 0 0 0 16px;
     border-radius: 10px;  
 }
 nav a:hover{
@@ -142,6 +142,11 @@ border: none;
     border-radius: 10px;
     padding: 2px 300px 2px 5px;
     flex-wrap: wrap;
+}
+/* Carrusel */
+d-block w-100{
+    width: 100%;
+    height: 60%;
 }
 
 /*MEDIA QUERY REPONSIVE*/
