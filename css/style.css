@@ -14,6 +14,7 @@ header{
     align-items: center;
     padding: 3px;
     min-height: 60px;
+    
 }
 img{
     cursor: pointer;
@@ -32,6 +33,8 @@ nav{
     position: absolute;
     left: 13rem;
     flex-wrap: wrap;
+    
+
 }
 nav a{
     
@@ -39,13 +42,20 @@ nav a{
     cursor: pointer;
     color: aliceblue;
     font-weight: 500;
-    padding: 0 0 0 16px;
-    border-radius: 10px;  
+    padding: 0 5px 0 16px;
+    margin: 0 0 0 10px;
+    border-radius: 10px; 
+    transition: all ease-in-out 0.5s; 
+    
 }
 nav a:hover{
-        background-color: rgb(255, 255, 255);
-        color: black;
-        transition: all ease-in-out .7s;
+    
+        background-position: right center;
+        background-image: linear-gradient(to right, #F72A4B  0%, #F72A4B  50%, #ffffff 40%);
+        background-size: 200% auto;
+        color: #000000;
+        
+        
 }
 
 /* Navegador reponsivee*/
@@ -136,6 +146,14 @@ border: none;
     color: black;
     margin: 0 0 20px 0;
     z-index: 100;
+    transition: all ease-in-out .5s;
+}
+
+.barra .iniciose:hover{
+    background-position: right center;
+        background-image: linear-gradient(to right, rgb(206, 202, 202)  0%, rgb(206, 202, 202)  50%, #ffffff 40%);
+        background-size: 200% auto;
+        color: #000000;
 }
 .separador{
     border-top: rgba(255, 181, 181, 0.425) 1px solid;
@@ -145,17 +163,52 @@ border: none;
 }
 .barra li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 700;
     border: rgba(255, 255, 255, 0.295)  2px solid;
     border-radius: 10px;
     padding: 2px 300px 2px 5px;
     flex-wrap: wrap;
+    background-color: #ffffff;
+    transition: all ease-in-out .5s;
+}
+.barra li a:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fff  0%, #fff  50%, rgb(206, 202, 202) 40%);
+    background-size: 200% auto;
+    color: #000000;
 }
 /* Carrusel */
-d-block w-100{
-    width: 100%;
-    height: 60%;
+
+.espaciador{
+    display: initial;
+    flex-wrap: wrap;
+   
+}
+.espaciador  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: calc(2vh + .1em);
+    background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
+    transition: all ease-in-out 0.5s;
+    color: #ffffff;
+    padding: 5px 0;
+    box-shadow: -5px -17px 58px -33px rgba(0,0,0,0.75);
+    border-top: #ffffff96 2px solid;
+
+
+    
+}
+.espaciador p:hover{
+    text-decoration:underline;
+    cursor: pointer;
+    background-position: right center;
+    background-size: 200% auto;
+    
 }
 
 /*MEDIA QUERY REPONSIVE*/
@@ -216,7 +269,7 @@ d-block w-100{
      }
      /* Carrusel */
     
-    @media (max-width:400px){
+    @media (max-width:576px){
 
         header{
             min-height: 30px;
@@ -258,6 +311,9 @@ d-block w-100{
         }
         .buscar input{
             width: 85%;
+        }
+        .espaciador p{
+            font-size: calc(1vh + .1em);
         }
     }
 
