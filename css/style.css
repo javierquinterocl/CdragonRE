@@ -14,7 +14,6 @@ header{
     align-items: center;
     padding: 3px;
     min-height: 60px;
-    
 }
 img{
     cursor: pointer;
@@ -33,11 +32,8 @@ nav{
     position: absolute;
     left: 13rem;
     flex-wrap: wrap;
-    
-
 }
 nav a{
-    
     text-decoration: none;
     cursor: pointer;
     color: aliceblue;
@@ -46,16 +42,12 @@ nav a{
     margin: 0 0 0 10px;
     border-radius: 10px; 
     transition: all ease-in-out 0.5s; 
-    
 }
 nav a:hover{
-    
         background-position: right center;
         background-image: linear-gradient(to right, #F72A4B  0%, #F72A4B  50%, #ffffff 40%);
         background-size: 200% auto;
-        color: #000000;
-        
-        
+        color: #000000;      
 }
 .inicios{
     display: flex;
@@ -90,6 +82,7 @@ nav a:hover{
     display: none;
     cursor: pointer;
 }
+/*----------------BARRA REPONSIVE------------ */
 .barra {
     position: absolute;
     text-decoration: none;
@@ -108,6 +101,54 @@ nav a:hover{
 .barra.open{
     clip-path: circle(150% at 91% 10%);
 }
+.barra li{
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra .iniciose{
+    margin: 0;
+    display: flex;
+    text-decoration: none;
+    width: 100%px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 202, 202);
+    color: black;
+    margin: 0 0 20px 0;
+    z-index: 100;
+    transition: all ease-in-out .5s;
+}
+
+.barra .iniciose:hover{
+    background-position: right center;
+        background-image: linear-gradient(to right, rgb(206, 202, 202)  0%, rgb(206, 202, 202)  50%, #ffffff 40%);
+        background-size: 200% auto;
+        color: #000000;
+}
+.barra li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: rgba(255, 255, 255, 0.295)  2px solid;
+    border-radius: 10px;
+    padding: 2px 300px 2px 5px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    transition: all ease-in-out .5s;
+}
+.barra li a:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fff  0%, #fff  50%, rgb(206, 202, 202) 40%);
+    background-size: 200% auto;
+    color: #000000;
+}
+/*----------------BUSCADOR REPONSIVE------------ */
 .buscar{
     position: absolute;
     right: 0;
@@ -153,65 +194,15 @@ font-size: 0.8em;
     transform: scale(0.7);
 }
 
-.barra li{
-    padding: 15px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-.barra .iniciose{
-    margin: 0;
-    display: flex;
-    text-decoration: none;
-    width: 100%px;
-    height: 30px;
-    border-radius: 30px;
-    font-weight: 700;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(206, 202, 202);
-    color: black;
-    margin: 0 0 20px 0;
-    z-index: 100;
-    transition: all ease-in-out .5s;
-}
-
-.barra .iniciose:hover{
-    background-position: right center;
-        background-image: linear-gradient(to right, rgb(206, 202, 202)  0%, rgb(206, 202, 202)  50%, #ffffff 40%);
-        background-size: 200% auto;
-        color: #000000;
-}
+/*----------------------SEPARADOR------------------- */
 .separador{
     border-top: rgba(255, 181, 181, 0.425) 1px solid;
 }
 .separador1{
     border-bottom: rgba(255, 176, 176, 0.404) 1px solid;
 }
-.barra li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    border: rgba(255, 255, 255, 0.295)  2px solid;
-    border-radius: 10px;
-    padding: 2px 300px 2px 5px;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    transition: all ease-in-out .5s;
-}
-.barra li a:hover{
-    background-position: right center;
-    background-image: linear-gradient(to right, #fff  0%, #fff  50%, rgb(206, 202, 202) 40%);
-    background-size: 200% auto;
-    color: #000000;
-}
-/* Carrusel */
-.carousel img{
-    height: 524px;
-    width: 100%;
 
-}
+/*////////////////////////////////////// ESPACIADOR //////////////////////////////////////////////////////////// */
 .espaciador{
     display: initial;
     flex-wrap: wrap;
@@ -229,11 +220,7 @@ font-size: 0.8em;
     transition: all ease-in-out 0.5s;
     color: #ffffff;
     padding: 5px 0;
-    box-shadow: -5px -17px 58px -33px rgba(0,0,0,0.75);
     border-top: #ffffff96 2px solid;
-
-
-    
 }
 .espaciador p:hover{
     text-decoration:underline;
@@ -242,10 +229,102 @@ font-size: 0.8em;
     background-size: 200% auto;
     
 }
+.espaciador h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: calc(4vh + .1em);
+    padding: 5px;
+    color: #fff;
+    background-image: url("/img/side-wave_background\ \(2\).jpg");
+    
+}
+
+/*PRODUCTOS DE TODO TIPO */
+.conteprod{
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.contenidoproduc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+
+}
+.contenidoproduc .pccomp{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    width: 30%;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.pccomp img{
+    width: 70%;
+    height: 220px;
+    
+}
+
+.pccomp h3{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    
+    font-size: 1.0em;
+}
+.pccomp h4{
+    color: #ff1212;
+    font-weight: 900;
+    
+    
+}
+.pccomp button{
+    display: flex;
+    background: rgb(192,115,255);
+    background: linear-gradient(53deg, rgba(192,115,255,1) 0%, rgba(160,61,250,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    border-radius: 20px;
+    font-weight: 700;
+    height: 35px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pccomp button:hover{
+    transition: all ease-in-out .7s;
+    transform: scale(1.05);
+    background: rgb(255,65,126);
+    background: linear-gradient(53deg, rgba(255,65,126,1) 0%, rgba(132,41,235,1) 100%);
+}
+.pccomp img:hover{
+    transform: scale(1.04);
+    transition: all ease-in-out .5s;
+}
+
+
+
 
 /*MEDIA QUERY REPONSIVE*/
-
-
 @media (max-width:991px){
     /*Nav */
     header{
@@ -273,7 +352,6 @@ font-size: 0.8em;
         position: absolute;
         right: 0;
         padding: 9px 10px 10px 10px;
-        
     }
     .botonnav i {
         padding: 3px 10px 10px 10px;
@@ -294,33 +372,50 @@ font-size: 0.8em;
         width: 100%;
         display: block;
         z-index: 100;
-       
-        
      }
      .carousel img{
         height: 441px;
         width: 100%;
-
     }
-
      /* Carrusel */
+     .contenidoproduc .pccomp{
+        width: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    .conteprod{
+        height: 1200px;
+    }
 } 
+@media (max-width:700px){
+    .contenidoproduc .pccomp{
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        margin-bottom: 15px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .conteprod{
+        height: 2550px;
+    }
+}
 @media (max-width:576px){
 
     header{
         min-height: 30px;
         padding: 3px;
     }
-    .barra{
-       top:4.3rem; 
-       width:100%;
-       height: 72%;
-       display: block;
-       z-index: 100;
-    }
+    
     .logo img{
         height: 70px;
-    }
+    }/* ----BOTONES MEDIA QUERY-------*/
+
     .botonnav{
         display: block;  
     }
@@ -336,9 +431,18 @@ font-size: 0.8em;
         align-items: center;
         padding: 10px;
     }
+    /* ----BARRA MEDIA QUERY*/
     .barra li a{
         padding: 2px 160px 2px 5px;
     }
+    .barra{
+        top:4.3rem; 
+        width:100%;
+        height: 72%;
+        display: block;
+        z-index: 100;
+     }
+    /* ----BUSCADOR MEDIA QUERY*/
     .buscar{
         top: 4rem;
         height: 20%;
@@ -348,12 +452,30 @@ font-size: 0.8em;
     .buscar input{
         width: 85%;
     }
+    /* ----ESPACIADOR MEDIA QUERY*/
     .espaciador p{
         font-size: calc(1vh + .1em);
     }
+    .espaciador h1{
+        font-size: calc(3vh + .1em);
+    }
+    /* ----CARRUSEL MEDIA QUERY*/
     .carousel img{
         height: 250px;
         width: 100%;
 
+    }
+
+    .contenidoproduc .pccomp{
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 360px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .conteprod{
+        height: 2400px;
     }
 }
