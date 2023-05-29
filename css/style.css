@@ -239,7 +239,9 @@ font-size: 0.8em;
     font-size: calc(4vh + .1em);
     padding: 5px;
     color: #fff;
-    background-image: url("/img/side-wave_background\ \(2\).jpg");
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%,  rgba(7,7,9,1) 93.2% );
+    border-top: #ffffff77 2px solid;
+    border-bottom: #ffffffa1 2px solid;
     
 }
 
@@ -251,7 +253,7 @@ font-size: 0.8em;
     display: block;
     flex-wrap: wrap;
     background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 0 0 30px 30px;
 }
 
 .contenidoproduc{
