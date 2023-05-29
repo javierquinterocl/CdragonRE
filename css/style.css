@@ -370,7 +370,7 @@ font-size: 0.8em;
      }
      .buscar{
         top: 5rem;
-        height: 20%;
+        height: 7%;
         width: 100%;
         display: block;
         z-index: 100;
@@ -447,7 +447,7 @@ font-size: 0.8em;
     /* ----BUSCADOR MEDIA QUERY*/
     .buscar{
         top: 4rem;
-        height: 20%;
+        height: 7%;
         display: block;
         z-index: 100;
     }
