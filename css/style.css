@@ -253,7 +253,7 @@ font-size: 0.8em;
     display: block;
     flex-wrap: wrap;
     background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
-    border-radius: 0 0 30px 30px;
+
 }
 
 .contenidoproduc{
@@ -275,11 +275,15 @@ font-size: 0.8em;
     margin-top: 20px;
     text-align: center;
     flex-direction: column;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+
 }
 
 .pccomp img{
     width: 70%;
     height: 220px;
+    transition: height 1s ease 0s;
     
 }
 
@@ -312,6 +316,11 @@ font-size: 0.8em;
     flex-wrap: wrap;
 }
 
+.pccomp:hover{
+    opacity: 0.85;
+background-color: #ffacda;
+color: #fff;
+}
 .pccomp button:hover{
     transition: all ease-in-out .7s;
     transform: scale(1.05);
@@ -321,6 +330,57 @@ font-size: 0.8em;
 .pccomp img:hover{
     transform: scale(1.04);
     transition: all ease-in-out .5s;
+    height: 204px;
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #333030;
+    border-top: #fff 2px solid;
+    border-bottom: #fff 2px solid;
+}
+
+footer img{
+    width: 300px;
+    height: 200px;
+}
+.iconosredes a > i{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 5px;
+
+
+}
+.iconosredes a{
+    text-decoration: none ;
+    color: #fff;
+}
+
+.contenidofooter{
+    display: flex;
+}
+.contenidofooter li{
+    list-style: none;
+    padding: 10px;
+    color: #fff;
+    border-top: #ffffff 2px solid;
+    transition: border-top 1s ease 0s;
+}
+.contenidofooter li{
+    border-top: #fffcfc 0.5px solid;
+
 }
 
 
@@ -391,6 +451,9 @@ font-size: 0.8em;
     .conteprod{
         height: 1200px;
     }
+
+    /* FOOTER CSS */
+
 } 
 @media (max-width:700px){
     .contenidoproduc .pccomp{
@@ -479,5 +542,10 @@ font-size: 0.8em;
     }
     .conteprod{
         height: 2400px;
+    }
+    .contenidofooter li{
+        flex-direction: column;
+        flex-wrap: wrap;
+
     }
 }
