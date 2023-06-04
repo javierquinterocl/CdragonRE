@@ -8,18 +8,20 @@ body{
 }
 /* NAVEGADOR */
 header{
-    background-color: #F72A4B;
+    background-color:#030303;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
     min-height: 60px;
+    row-gap: 20px;
 }
 img{
     cursor: pointer;
 }
 .logo{
     display: flex;
+margin-left: 50px;
    
 }
 .logo img{
@@ -30,13 +32,13 @@ img{
 nav{
     display: flex;
     position: absolute;
-    left: 13rem;
+    left: 17rem;
     flex-wrap: wrap;
 }
 nav a{
     text-decoration: none;
     cursor: pointer;
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.644);
     font-weight: 500;
     padding: 0 5px 0 16px;
     margin: 0 0 0 10px;
@@ -45,9 +47,15 @@ nav a{
 }
 nav a:hover{
         background-position: right center;
-        background-image: linear-gradient(to right, #F72A4B  0%, #F72A4B  50%, #ffffff 40%);
+        background-image: linear-gradient(to right, #030303  0%, #030303  50%, #ffffff 40%);
         background-size: 200% auto;
         color: #000000;      
+}
+#iniciopri{
+    color: #fff;
+}
+#iniciopri:hover{
+    color: #000000;
 }
 .inicios{
     display: flex;
@@ -63,7 +71,7 @@ nav a:hover{
     border-radius: 10px;
     padding: 0 5px;
     justify-content: end;
-    margin: 0 5px;
+    margin-left: 12px;
     transition: all ease-in-out .5s;
 }
 .iniciosesion:hover{
@@ -92,7 +100,7 @@ nav a:hover{
     top: 4rem;
     width: 100%;
     border-radius: 0 0 20px 20px;
-    background-color: #f72a4c;
+    background-color: #030303;
     overflow: hidden;
     display: none;
     clip-path: circle(0% at 91% 10%);
@@ -216,7 +224,7 @@ font-size: 0.8em;
     margin-bottom: 0;
     font-weight: 500;
     font-size: calc(2vh + .1em);
-    background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
+    background-color: #f72a4c;
     transition: all ease-in-out 0.5s;
     color: #ffffff;
     padding: 5px 0;
@@ -248,11 +256,11 @@ font-size: 0.8em;
 /*PRODUCTOS DE TODO TIPO */
 .conteprod{
     background-color: rgb(255, 255, 255);
-    height: 800px;
+    
     width: 100%;
     display: block;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right,  #ff1ab3 0%,  #f72a4c 50%, #ff1ab3  100%);
+    background-color: #030303;
 
 }
 
@@ -260,7 +268,8 @@ font-size: 0.8em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+    gap: 0 ;
 
 }
 .contenidoproduc .pccomp{
@@ -271,10 +280,11 @@ font-size: 0.8em;
     height: 340px;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-top: 20px;
     text-align: center;
     flex-direction: column;
+    
     opacity: 1;
     transition: opacity 1s ease 0s;
 
@@ -322,16 +332,11 @@ background-color: #ffacda;
 color: #fff;
 }
 .pccomp button:hover{
-    transition: all ease-in-out .7s;
-    transform: scale(1.05);
+    
     background: rgb(255,65,126);
     background: linear-gradient(53deg, rgba(255,65,126,1) 0%, rgba(132,41,235,1) 100%);
 }
-.pccomp img:hover{
-    transform: scale(1.04);
-    transition: all ease-in-out .5s;
-    height: 204px;
-}
+
 
 
 footer{
@@ -343,14 +348,14 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #333030;
+    background-color: #030303;
     border-top: #fff 2px solid;
     border-bottom: #fff 2px solid;
 }
 
 footer img{
     width: 300px;
-    height: 200px;
+    height: 150px;
 }
 .iconosredes a > i{
     display: inline-block;
@@ -541,7 +546,8 @@ footer img{
         flex-direction: column;
     }
     .conteprod{
-        height: 2400px;
+        height: 3600px;
+
     }
     .contenidofooter li{
         flex-direction: column;
