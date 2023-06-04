@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Source+Sans+Pro:ital,wght@1,700&display=swap');
 
 
 *{
@@ -295,7 +296,7 @@ font-size: 0.8em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 25px;
+    padding-bottom: 120px;
     gap: 0 ;
 
 }
@@ -323,6 +324,12 @@ font-size: 0.8em;
     transition: height 1s ease 0s;
     
 }
+.pccomp:hover{
+    border: 4px solid rgb(255, 42, 42);
+    transform: scale(1.05);
+    
+}
+
 
 .pccomp h3{
     color: rgb(87, 87, 87);
@@ -351,10 +358,11 @@ font-size: 0.8em;
     align-items: center;
     flex-wrap: wrap;
     transition: all ease-in-out .5s;
+    
 }
 
+
 .pccomp:hover{
-   
    
 color: #fff;
 }
@@ -363,6 +371,53 @@ color: #fff;
     background: rgb(255,65,126);
     background: linear-gradient(53deg, rgba(255,65,126,1) 0%, rgba(132,41,235,1) 100%);
 }
+
+.contenedor3{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+.contenedor3 .imagencpu{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+.contenedor3 .imagencpu img{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    right: 50px;
+    bottom: 0;
+    animation: movimiento 4s linear infinite;
+    
+}
+.contenedor3 .textocpu{
+    overflow: hidden;
+}
+.contenedor3 .textocpu p{
+    font-family:'Raleway', sans-serif;
+}
+
+.wave svg{
+  
+    width: 100%;
+    height: 100px;
+    stroke: none;
+    
+    flex-wrap: wrap;
+}
+@keyframes movimiento{
+    
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+
 
 
 
@@ -378,7 +433,7 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #030303;
-    border-top: #fff 2px solid;
+    
     border-bottom: #fff 2px solid;
 }
 
@@ -501,7 +556,17 @@ footer img{
         flex-direction: column;
     }
     .conteprod{
-        height: 2550px;
+        height: 3820px;
+
+    }
+    .contenedor3 .imagencpu img{
+        width: 300px;
+        height: 300px;
+        right: 20px;
+    }
+    .contenedor3{
+        height: 200px;
+
     }
 }
 @media (max-width:576px){
