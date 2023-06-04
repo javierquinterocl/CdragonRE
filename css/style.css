@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: TTNormsProRegular,MyriadRegular,Segoe UI,Arial,PingFang TC,Microsoft JhengHei,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /* NAVEGADOR */
 header{
@@ -33,6 +36,7 @@ nav{
     display: flex;
     position: absolute;
     left: 17rem;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 nav a{
@@ -44,18 +48,32 @@ nav a{
     margin: 0 0 0 10px;
     border-radius: 10px; 
     transition: all ease-in-out 0.5s; 
+    position: relative;
+}
+
+nav a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    border-radius: 5px;
+    background-color: #e70808;
+    position: absolute;
+    left: 5px;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 nav a:hover{
-        background-position: right center;
-        background-image: linear-gradient(to right, #030303  0%, #030303  50%, #ffffff 40%);
-        background-size: 200% auto;
-        color: #000000;      
+    color: #fff;
 }
 #iniciopri{
     color: #fff;
 }
 #iniciopri:hover{
-    color: #000000;
+    color: #fff9f9;
 }
 .inicios{
     display: flex;
@@ -109,8 +127,11 @@ nav a:hover{
 .barra.open{
     clip-path: circle(150% at 91% 10%);
 }
+.barra ul{
+    padding-left: 0;
+}
 .barra li{
-    padding: 15px;
+    padding: 15px 2px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +140,7 @@ nav a:hover{
     margin: 0;
     display: flex;
     text-decoration: none;
-    width: 100%px;
+    width: 100%;
     height: 30px;
     border-radius: 30px;
     font-weight: 700;
@@ -141,13 +162,11 @@ nav a:hover{
 }
 .barra li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(122, 122, 122);
     font-weight: 700;
-    border: rgba(255, 255, 255, 0.295)  2px solid;
-    border-radius: 10px;
-    padding: 2px 300px 2px 5px;
-    flex-wrap: wrap;
-    background-color: #ffffff;
+    border-bottom: 2px #585858 solid;
+    width: 100%;
+    background-color: #030303;
     transition: all ease-in-out .5s;
 }
 .barra li a:hover{
@@ -155,7 +174,15 @@ nav a:hover{
     background-image: linear-gradient(to right, #fff  0%, #fff  50%, rgb(206, 202, 202) 40%);
     background-size: 200% auto;
     color: #000000;
+    display: block;
 }
+.down{
+display: none;
+}
+.down li a:hover{
+    display: block;
+}
+
 /*----------------BUSCADOR REPONSIVE------------ */
 .buscar{
     position: absolute;
@@ -298,22 +325,21 @@ font-size: 0.8em;
 }
 
 .pccomp h3{
-    color: rgb(0, 0, 0);
+    color: rgb(87, 87, 87);
     font-weight: 800;
     
     font-size: 1.0em;
 }
 .pccomp h4{
-    color: #ff1212;
+    color: #303030;
     font-weight: 900;
     
     
 }
 .pccomp button{
     display: flex;
-    background: rgb(192,115,255);
-    background: linear-gradient(53deg, rgba(192,115,255,1) 0%, rgba(160,61,250,1) 100%);
-    font-family: Arial, Helvetica, sans-serif;
+   background-color: #ff1212;
+   
     color: aliceblue;
     border-radius: 20px;
     font-weight: 700;
@@ -324,11 +350,12 @@ font-size: 0.8em;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    transition: all ease-in-out .5s;
 }
 
 .pccomp:hover{
-    opacity: 0.85;
-background-color: #ffacda;
+   
+   
 color: #fff;
 }
 .pccomp button:hover{
@@ -338,6 +365,8 @@ color: #fff;
 }
 
 
+
+  /* FOOTER////////////////////////// */
 
 footer{
     display: flex;
@@ -502,9 +531,7 @@ footer img{
         padding: 10px;
     }
     /* ----BARRA MEDIA QUERY*/
-    .barra li a{
-        padding: 2px 160px 2px 5px;
-    }
+  
     .barra{
         top:4.3rem; 
         width:100%;
