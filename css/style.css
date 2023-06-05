@@ -288,7 +288,8 @@ font-size: 0.8em;
     width: 100%;
     display: block;
     flex-wrap: wrap;
-    background-color: #030303;
+    background-image: url(/img/bg-panoramic.jpg);
+    background-position: fixed;
 }
 
 .contenidoproduc{
