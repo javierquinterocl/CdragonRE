@@ -376,6 +376,8 @@ color: #fff;
     display: flex;
     width: 100%;
     height: 500px;
+   background-color: #030303;
+   
     
     
 }
@@ -383,7 +385,6 @@ color: #fff;
     position: relative;
     height: 100%;
     width: 100%;
-    overflow: visible;
 }
 .contenedor3 .imagencpu img{
     position: relative;
@@ -395,21 +396,32 @@ color: #fff;
     animation: movimiento 4s linear infinite;
     
 }
+
 .contenedor3 .textocpu{
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-}
-.contenedor3 .textocpu p{
-    font-family:'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: rgb(3,3,3);
+background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
+    
 }
 
-.wave svg{
-  
-    width: 100%;
-    height: 100px;
-    stroke: none;
-    
-    flex-wrap: wrap;
+.contenedor3 .textocpu p{
+    font-family:'Raleway', sans-serif;
+    color: #fff;
+    font-size: 1.5em;
 }
+.contenedor3 .textocpu h1{
+    color: #ff9e1b;
+}
+.contenedor3 button{
+    border: none;
+
+}
+
+
 @keyframes movimiento{
     
     50%{
@@ -417,9 +429,22 @@ color: #fff;
         top: -90px;
     }
 }
+.wave svg{
+  
+    width: 100%;
+    height: 100px;
+    stroke: none;
+    background: none;
+    flex-wrap: wrap;
+}
 
-
-
+.espaciadorcont{
+    content: "";
+    width: 20%;
+    width: 100%;
+    background-color: #030303;
+    overflow: hidden;
+}
 
   /* FOOTER////////////////////////// */
 
