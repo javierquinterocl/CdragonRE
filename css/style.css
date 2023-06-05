@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Source+Sans+Pro:ital,wght@1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&display=swap');
 
 *{
     margin: 0;
@@ -19,6 +19,7 @@ header{
     padding: 3px;
     min-height: 60px;
     row-gap: 20px;
+   
 }
 img{
     cursor: pointer;
@@ -79,18 +80,20 @@ nav a:hover{
 .inicios{
     display: flex;
     right: 0;
+    padding-left: 20px;
     
 }
 .iniciosesion{
-    color: #000000;
+    color: #fffbfb;
     text-decoration: none;
     flex-wrap: wrap;
     font-weight: 500;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 10px;
     padding: 0 5px;
     justify-content: end;
     margin-left: 12px;
+    
     transition: all ease-in-out .5s;
 }
 .iniciosesion:hover{
@@ -194,7 +197,7 @@ display: none;
     padding: 10px;
     display: none;
     overflow: hidden;
-    background-color: #f72a4c;
+    background-color: #030303;
     border-radius: 0 0 20px 20px;
     clip-path: circle(0% at 91% 10%);
     transition: ease all 0.3s;  
@@ -240,9 +243,8 @@ font-size: 0.8em;
 
 /*////////////////////////////////////// ESPACIADOR //////////////////////////////////////////////////////////// */
 .espaciador{
-    display: initial;
+    display: block;
     flex-wrap: wrap;
-   
 }
 .espaciador  p{
     display: flex;
@@ -263,7 +265,6 @@ font-size: 0.8em;
     cursor: pointer;
     background-position: right center;
     background-size: 200% auto;
-    
 }
 .espaciador h1{
     display: flex;
@@ -272,24 +273,22 @@ font-size: 0.8em;
     flex-wrap: wrap;
     margin-bottom: 0;
     font-weight: 700;
+    gap: 8px;
     font-size: calc(4vh + .1em);
-    padding: 5px;
+    padding: 5px 5px 40px 5px;
     color: #fff;
-    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%,  rgba(7,7,9,1) 93.2% );
-    border-top: #ffffff77 2px solid;
+    background-color: rgb(249, 47, 47);
+    top: 0;
     border-bottom: #ffffffa1 2px solid;
-    
 }
 
 /*PRODUCTOS DE TODO TIPO */
 .conteprod{
     background-color: rgb(255, 255, 255);
-    
     width: 100%;
     display: block;
     flex-wrap: wrap;
     background-color: #030303;
-
 }
 
 .contenidoproduc{
@@ -298,7 +297,6 @@ font-size: 0.8em;
     justify-content: space-evenly;
     padding-bottom: 120px;
     gap: 0 ;
-
 }
 .contenidoproduc .pccomp{
     display: flex;
@@ -312,41 +310,33 @@ font-size: 0.8em;
     margin-top: 20px;
     text-align: center;
     flex-direction: column;
-    
     opacity: 1;
     transition: opacity 1s ease 0s;
-
 }
 
 .pccomp img{
     width: 70%;
     height: 220px;
     transition: height 1s ease 0s;
-    
 }
 .pccomp:hover{
     border: 4px solid rgb(255, 42, 42);
     transform: scale(1.05);
-    
 }
 
 
 .pccomp h3{
     color: rgb(87, 87, 87);
     font-weight: 800;
-    
     font-size: 1.0em;
 }
 .pccomp h4{
     color: #303030;
-    font-weight: 900;
-    
-    
+    font-weight: 900;  
 }
 .pccomp button{
     display: flex;
    background-color: #ff1212;
-   
     color: aliceblue;
     border-radius: 20px;
     font-weight: 700;
@@ -358,28 +348,20 @@ font-size: 0.8em;
     align-items: center;
     flex-wrap: wrap;
     transition: all ease-in-out .5s;
-    
 }
-
-
 .pccomp:hover{
-   
-color: #fff;
+   color: #fff;
 }
 .pccomp button:hover{
-    
     background: rgb(255,65,126);
     background: linear-gradient(53deg, rgba(255,65,126,1) 0%, rgba(132,41,235,1) 100%);
 }
-
+/* CONTENEDORES DE IMAGENES ANIMACIONES - - - - - - - - - - - -- - - - - - -- - - - - -- - - - - - --  */
 .contenedor3{
     display: flex;
     width: 100%;
     height: 500px;
-   background-color: #030303;
-   
-    
-    
+   background-color: #030303; 
 }
 .contenedor3 .imagencpu{
     position: relative;
@@ -394,7 +376,6 @@ color: #fff;
     right: 50px;
     bottom: 0;
     animation: movimiento 4s linear infinite;
-    
 }
 
 .contenedor3 .textocpu{
@@ -410,18 +391,60 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
 
 .contenedor3 .textocpu p{
     font-family:'Raleway', sans-serif;
-    color: #fff;
+    color: #ffffffd3;
     font-size: 1.5em;
+    backdrop-filter: blur(5px);
 }
 .contenedor3 .textocpu h1{
     color: #ff9e1b;
+    
 }
-.contenedor3 button{
+.textocpu button{
     border: none;
-
+    width: 30%;
+    border-radius: 10px;
+    background-color: #ff9e1b;
+    color: #fff;
+    margin-left: 7px;
 }
 
+.contenedor3 .textocpu2{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgb(3,3,3);
+    background: linear-gradient(218deg, rgba(3,3,3,1) 63%, rgba(13,110,253,1) 63%);
+}
+.contenedor3 .textocpu2 h1{
+    color: #418bfa ;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  
+}
+.contenedor3 .textocpu2 p{
+    font-family:'Raleway', sans-serif;
+    color: #ffffffbd;
+    font-size: 1.5em;
+    backdrop-filter: blur(5px);
+}
 
+.textocpu2 button{
+    border: none;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #1b50ff;
+    border: #fff 2px solid;
+    color: #fff;
+    
+    transition: all ease-in-out .5s;
+}
+.textocpu button:hover{
+    background-color: #ffc374;
+    
+    color: #030303;
+}
 @keyframes movimiento{
     
     50%{
@@ -432,10 +455,12 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
 .wave svg{
   
     width: 100%;
-    height: 100px;
+    height: 64px;
     stroke: none;
     background: none;
     flex-wrap: wrap;
+    fill: none;
+   background-color: #030303
 }
 
 .espaciadorcont{
@@ -444,6 +469,15 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
     width: 100%;
     background-color: #030303;
     overflow: hidden;
+}
+.espaciadorcont2{
+    content: "";
+    width: 20%;
+    width: 100%;
+    background-color: #030303;
+    overflow: hidden;
+    background: rgb(3,3,3);
+    background: rgb(3,3,3);
 }
 
   /* FOOTER////////////////////////// */
@@ -500,9 +534,15 @@ footer img{
     background: #030303;
     color: #fff;
 }
+.comentarios a{
+    color: #e70808;
+}
 
-
-
+.embed-refresh-v2.embed-refresh .badge .badge-content {
+    background: rgb(253 13 13);
+    padding: 1px 4px;
+    border-radius: 4px;
+}
 
 /*MEDIA QUERY REPONSIVE*/
 @media (max-width:991px){
@@ -567,9 +607,9 @@ footer img{
         flex-direction: column;
     }
     .conteprod{
-        height: 1200px;
-    }
+        height: 1900px;
 
+    }
     /* FOOTER CSS */
 
 } 
