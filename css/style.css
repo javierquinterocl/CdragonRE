@@ -10,6 +10,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* NAVEGADOR */
 header{
     background-color:#030303;
@@ -107,7 +110,6 @@ nav a:hover{
     display: none;
     cursor: pointer;
 }
-
 .botonbuscar{
     display: none;
     cursor: pointer;
@@ -157,7 +159,6 @@ nav a:hover{
     z-index: 100;
     transition: all ease-in-out .5s;
 }
-
 .barra .iniciose:hover{
     background-position: right center;
         background-image: linear-gradient(to right, rgb(206, 202, 202)  0%, rgb(206, 202, 202)  50%, #ffffff 40%);
@@ -180,13 +181,6 @@ nav a:hover{
     color: #000000;
     display: block;
 }
-.down{
-display: none;
-}
-.down li a:hover{
-    display: block;
-}
-
 /*----------------BUSCADOR REPONSIVE------------ */
 .buscar{
     position: absolute;
@@ -302,7 +296,7 @@ font-size: 0.8em;
 .contenidoproduc .pccomp{
     display: flex;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     width: 30%;
     height: 340px;
     justify-content: center;
@@ -321,11 +315,13 @@ font-size: 0.8em;
     transition: height 1s ease 0s;
 }
 .pccomp:hover{
-    border: 4px solid rgb(255, 42, 42);
+    border: 4px solid rgb(255, 0, 0);
     transform: scale(1.05);
+    background-color: #FFC3C3;
+   
+
+
 }
-
-
 .pccomp h3{
     color: rgb(87, 87, 87);
     font-weight: 800;
@@ -378,6 +374,7 @@ font-size: 0.8em;
     right: 50px;
     bottom: 0;
     animation: movimiento 4s linear infinite;
+    filter: drop-shadow(-42px 25px 0px #ff9e1b);
 }
 .contenedor3 .imagencpu2 img{
     position: relative;
@@ -387,6 +384,8 @@ font-size: 0.8em;
     right: 50px;
     bottom: 0;
     animation: movimiento 4s linear infinite;
+    filter: drop-shadow(60px 40px 0px #7A97F5);
+
 }
 .contenedor3 .textocpu{
     display: flex;
@@ -398,7 +397,6 @@ font-size: 0.8em;
 background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
     
 }
-
 .contenedor3 .textocpu p{
     font-family:'Raleway', sans-serif;
     color: #ffffffd3;
@@ -416,8 +414,8 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
     background-color: #ff9e1b;
     color: #fff;
     margin-left: 7px;
+    filter: drop-shadow(0px 0px 49px #ffcf91);
 }
-
 .contenedor3 .textocpu2{
     display: flex;
     flex-direction: column;
@@ -431,13 +429,10 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
     color: #418bfa ;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-  
-  
 }
 .contenedor3 .textocpu2 p{
     font-family:'Raleway', sans-serif;
     color: #ffffffbd;
-    
     backdrop-filter: blur(5px);
 }
 
@@ -448,7 +443,6 @@ background: linear-gradient(131deg, rgba(3,3,3,1) 63%, rgba(255,158,27,1) 63%);
     background-color: #1b50ff;
     border: #fff 2px solid;
     color: #fff;
-    
     transition: all ease-in-out .5s;
 }
 .textocpu button:hover{
@@ -503,7 +497,6 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #030303;
-    
     border-bottom: #fff 2px solid;
 }
 
@@ -637,10 +630,8 @@ footer img{
     }
     .conteprod{
         height: 1900px;
-
     }
     /* FOOTER CSS */
-
 } 
 @media (max-width:700px){
     .contenidoproduc .pccomp{
@@ -655,12 +646,10 @@ footer img{
     }
     .conteprod{
         height: 3820px;
-
     }
 
     .contenedor3{
-        height: 300px;
-
+      height: 300px;
     }
 }
 @media (max-width:576px){
@@ -719,9 +708,7 @@ footer img{
     .carousel img{
         height: 250px;
         width: 100%;
-
     }
-
     .contenidoproduc .pccomp{
         width: 89%;
         display: flex;
@@ -738,9 +725,7 @@ footer img{
     .contenidofooter li{
         flex-direction: column;
         flex-wrap: wrap;
-
     }
-   
 }
 @media (max-width:540px){
     .contenedor3 .imagencpu2 img{
@@ -748,14 +733,12 @@ footer img{
         height: 350px;
         right: 0;
         margin-left: 30px;
-        
+
     }
     .contenedor3 .imagencpu img{
         width: 400px;
         height: 400px;
-        margin-left: 25px;
-        
-
+        margin-left: 25px; 
         
     }
     .contenedor3{
@@ -764,16 +747,12 @@ footer img{
     }
     .contenedor3 .textocpu2{
         height: auto;
-
     }
-   
     .contenedor3 .imagencpu{
         height: auto;
-
     }
     .contenedor3 .imagencpu2{
         height: 150px;
-
     }
 }
 @media (max-width:400px){
@@ -781,7 +760,6 @@ footer img{
         width: 280px;
         height: auto;
         right: 0;
-        
     }
     .contenedor3 .imagencpu img{
         width: 300px;
@@ -791,7 +769,6 @@ footer img{
     .contenedor3{
         height: 600px;
         flex-wrap: wrap;
-        
     }
     .contenedor3 .textocpu2{
         height: auto;
@@ -801,10 +778,8 @@ footer img{
     }
     .contenedor3 .imagencpu2{
         height: 150px;
-        gap: 0;
-        
+        gap: 0; 
     }
-    
     .espaciadorcont2{
         display: none;
     }
