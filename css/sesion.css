@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,500&family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-/* body{
-    height: 100vh;
-} */
+ body{
+    background:url(/img/fondoinicio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+} 
 nav{
     width: 100%;
     display: flex;
-    height: 135px;
-    background-color: black;
-    justify-content: center;
+    height: 85px;
     align-items: center;
 }
 nav .imagennav{
@@ -20,8 +23,8 @@ nav .imagennav{
     align-items: center;
 
 }
-nav .imagennav img{
-    width: 50%;
+nav h1{
+    color: aliceblue;
 }
 .contenedor{
     width: 100%;
@@ -29,18 +32,57 @@ nav .imagennav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    margin-top: 90px;
+}
+.formulario{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 48px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    border: 1px #ffffff86 solid;
+}
+.inicios{
+    margin: 20px 30px 40px 20px;
+    height: 250px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     
 }
-
-.inicios{
-    margin: 30px 0 40px 0;
-    height: 300px;
-    width: 400px;
-    background-color: rgb(255, 174, 127);
+.inicios input{
+    border: none;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    outline: none;
+    background:none;
+}
+.inicios label{
+    position: absolute;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.inicios button{
+    border-radius: 5px;
+    border: none;
+    padding: 7px 0;
+}
+.texto{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 20px;
+}
+.texto h2{
+    color: #ffffff;
+    font-weight: 600;
+}
+.enlaces{
+    margin-bottom: 20px;
+}
+.enlaces a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9em;
 }
