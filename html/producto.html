@@ -8,21 +8,64 @@
     <meta name="keywords" content="Componentes, pc gamer, compudragon, ensambles">
     <link rel="icon" href="img/logopiedepagina.png">
     <link rel="stylesheet" href="../css/producto.css">
+    
     <title>Monitor ASUS</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="imagenlogo">
-                <img src="/img/logofooter2.png" alt="">
+        <nav id="inicio">
+            <div class="logo">
+                <img src="../img/logofooter2.png" alt="">
             </div>
-        </nav>
-
+            <div class="enlaces">
+                <a href="../index.html" id="iniciopri">Inicio</a>
+                <a href="#gabinetes"> Gabinetes</a>
+                <a href="#portatil">Portatiles</a>
+                <a href="#contacto"> Contactos</a>
+                <a href="#comentarios"> Comentarios</a>
+            </div>
+            <div class="inicios">
+                <div class="iniciosesion">
+                    <a href="../html/iniciosesion.html" ><i class="fa-solid fa-right-to-bracket fa-xl "></i></a>
+                    <a href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+                    <a href="https://github.com/javierquinterocl/CdragonRE"><i
+                        class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="botonesre">
+                <div class="botonnav">
+                    <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                  </div>
+                  <div class="botonbuscar">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                  </div>
+            </div>
+          </nav>
+          <!-- REPONSVIE -->
+          
+          <!-- nav reponsive cuando se presione el boton -->
+          <div class="buscar">
+            <input type="text" placeholder="Que desea buscar?">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="barra ">
+            <ul>
+              <li class="separador1"></li>
+              <li><a href="#">Inicio </a>
+              </li>
+              <li><a href="#">Gabinetes</a></li>
+              <li><a href="#">Portatiles</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li class="separador"></li>
+            </ul>
+            <a class="iniciose" href="../html/iniciosesion.html">Iniciar Sesion</a>
+            <a href="#" class="iniciose">Registrarse</a>
+          </div>
     </header>
     <main>
         <div class="contenedor">
             <div class="imagen">
-                <img src="/img/producto5.jpg" alt="">
+                <img src="/img/producto5.png" alt="">
             </div>
             <div class="textoproduc">
                 <h4>
@@ -39,6 +82,7 @@
         </div>
 
     </main>
-   
+    <script src="../js/myjs.js"></script>
+    <script src="https://kit.fontawesome.com/625d43fca3.js" crossorigin="anonymous"></script>
 </body>
 </html>
