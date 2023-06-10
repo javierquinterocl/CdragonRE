@@ -18,7 +18,7 @@ buscar.onclick = function (){
     const openbuscar = buscador.classList.contains("open");
 
     buscaricono.classList = openbuscar
-    ? "fa-solid fa-magnifying-glass"
-    : "fa-solid fa-magnifying-glass"
+    ? "fa-solid fa-magnifying-glass fa-xl"
+    : "fa-solid fa-magnifying-glass fa-xl"
 
 }
