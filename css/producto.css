@@ -25,7 +25,8 @@ body{
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin: 10px 5px;
+    overflow: hidden;
 }
 /* IMAGEN DEL PRODUCTO CONTENEDOR */
 .imagen{
@@ -45,16 +46,19 @@ body{
 }
 .imagen img{
    width: 100%;
+   cursor:-webkit-zoom-in;
 }
 .textoproduc h4{
     margin-bottom: 20px;
     font-size: clamp(1.1em,1.2vh , 1em);
     color: #fff;
+    margin-left: 10px;
 }
 .textoproduc p{
     margin-bottom: 20px;
     font-size: clamp(0.9em,1.2vh , 1em);
     color: #fff;
+    margin: 0 10px 20px 10px;
 }
 .textoproduc button{
     background-color: #e70808;
@@ -62,7 +66,14 @@ body{
     border-radius: 5px;
     color: #fff;
     border: 1px #adadad solid;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all ease-in-out .3s;
 
+}
+.textoproduc button:hover{
+    background-color: #adadad;
+    color: #030303;
 }
 .textoproduc h5{
     color: rgb(189, 255, 124);
@@ -74,7 +85,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: auto;
-    margin: 0 20px 0 20px;
+    margin: 0 20px 40px 20px;
     display: flex;
 }
 .description p{
@@ -97,11 +108,118 @@ body{
 .des h1{
     color: #fff;
     font-size: clamp(1.1em,1.2vh , 1em);
+    margin-left: 18px;
+}
+.contenedorrel{
+    display: flex;
+    width: 100%;
+    background-color: aliceblue;
+    height: 450px;
+    
+}
+.producrel{
+    display: flex;
+    
+    margin-top: 20px;
+    width: 100%;
+}
+
+.producrel .produc{
+    width: 35%;
+    flex-wrap: wrap;
+    height: 420px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    transition: all ease-in-out .3s;
+    margin-left: 10px;
+    border: 1px #d6d6d6 solid;
+    box-shadow: 0px 0px 36px 0px rgba(128, 128, 128, 0.75);
+}
+.produc:hover{
+    background-color: #e70808;
+    color: #fff;
+}
+.produc:hover .hoverproduc{
+    background-color: aliceblue;
+    color: #030303;
+}
+.produc:hover a{
+    color: #030303;
+}
+.produc img{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+.produc .hoverproduc{
+    height: 20px;
+    width: 90%;
+    background-color: #e70808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: #dddddd 1px solid;
+}
+.hoverproduc a{
+    margin-left: 20px;
+    text-decoration: none;
+    
+    color: #fff;
+}
+.producreltext{
+    background-color: #e70808;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.producreltext h1{
+    font-size: clamp(1.1em,1.2vh , 1em);
+    margin-left: 18px;
+}
+
+@media (max-width:920px) {
+    .contenedorrel{
+        height: 900px;
+        justify-content: center;
+    }
+    .producrel{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .producrel .produc{
+        width: 45%;
+      margin-left: 20px;
+    }
 }
 @media (max-width:755px) {
     .contenedor{
         display: block;
         margin: 100px 5px 0 5px;
         height: auto;
+    }
+}
+@media (max-width:640px) {
+    .contenedorrel{
+        height: 1400px;
+        justify-content: center;
+    }
+    .producrel{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .producrel .produc{
+        width: 80%;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .produc h3{
+        font-size: 0.8em;
     }
 }
