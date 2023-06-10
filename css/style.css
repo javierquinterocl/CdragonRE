@@ -11,213 +11,7 @@
 html {
     scroll-behavior: smooth;
 }
-/* NAVEGADOR */
-nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    z-index: 1;
-}
-#iniciopri{
-    color: #fff;
-}
-.inicios {
-    display: flex;
-    padding-left: 20px;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.iniciosesion a{
-    color: #fffbfb;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 10px;
-    padding: 0 5px;
-    margin-left: 12px;
-    transition: all ease-in-out .5s;
-}
-.iniciosesion a::after{
-    transition: none;
-    background-color: #fff;
-}
-.logo img{
-    height: 75px;
-    width: 180px;
-    cursor: pointer;
-}
-.enlaces{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-.enlaces a {
-    text-decoration: none;
-    cursor: pointer;
-    color: rgba(240, 248, 255, 0.644);
-    font-weight: 500;
-    padding: 0 5px 0 16px;
-    margin: 0 0 0 10px;
-    border-radius: 10px;
-    transition: all ease-in-out 0.5s;
-    position: relative;
-}
-nav a::after {
-    content: "";
-    height: 3px;
-    width: 0;
-    border-radius: 5px;
-    background-color: #e70808;
-    position: absolute;
-    left: 5px;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-nav a:hover {
-    color: #fff;
-}
-.botonnav {
-    display: none;
-    cursor: pointer;
-    z-index: 1;
-}
-.botonbuscar {
-    display: none;
-    cursor: pointer;
-}
-/*----------------BARRA REPONSIVE------------ */
-.barra {
-    position: absolute;
-    text-decoration: none;
-    right: 0;
-    height: 100vh;
-    padding: 10px;
-    top: 4rem;
-    width: 100%;
-    border-radius: 0 0 20px 20px;
-    background-color: #030303;
-    overflow: hidden;
-    display: none;
-    clip-path: circle(0% at 91% 10%);
-    transition: ease all 0.5s;
-    z-index: 1;
-}
-
-.barra.open {
-    clip-path: circle(150% at 91% 10%);
-}
-
-.barra ul {
-    padding-left: 0;
-}
-
-.barra li {
-    padding: 15px 2px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.barra .iniciose {
-    margin: 0;
-    display: flex;
-    text-decoration: none;
-    width: 100%;
-    height: 30px;
-    border-radius: 30px;
-    font-weight: 700;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(206, 202, 202);
-    color: black;
-    margin: 0 0 20px 0;
-    z-index: 100;
-    transition: all ease-in-out .5s;
-}
-.barra .iniciose:hover {
-    background-position: right center;
-    background-image: linear-gradient(to right, rgb(206, 202, 202) 0%, rgb(206, 202, 202) 50%, #ffffff 40%);
-    background-size: 200% auto;
-    color: #000000;
-}
-.barra li a {
-    text-decoration: none;
-    color: rgb(122, 122, 122);
-    font-weight: 700;
-    border-bottom: 2px #585858 solid;
-    width: 100%;
-    background-color: #030303;
-    transition: all ease-in-out .5s;
-}
-.barra li a:hover {
-    background-position: right center;
-    background-image: linear-gradient(to right, #fff 0%, #fff 50%, rgb(206, 202, 202) 40%);
-    background-size: 200% auto;
-    color: #000000;
-    display: block;
-}
-.botonesre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*----------------BUSCADOR REPONSIVE------------ */
-.buscar {
-    position: absolute;
-    right: 0;
-    top: 7rem;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: none;
-    overflow: hidden;
-    background-color: #030303;
-    border-radius: 0 0 20px 20px;
-    clip-path: circle(0% at 91% 10%);
-    transition: ease all 0.3s;
-}
-.buscar.open {
-    clip-path: circle(150% at 91% 10%);
-}
-.buscar input {
-    border-radius: 30px;
-    border: none;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 31px;
-    right: 20px;
-    padding: 0 5px;
-}
-.buscar ::placeholder {
-    color: rgb(170, 170, 170);
-    border: none;
-    font-size: 0.8em;
-}
-.buscar button {
-    background-color: aliceblue;
-    border: none;
-    border-radius: 30px;
-    padding: 2px 0 0 0;
-    width: 30px;
-    height: 31px;
-    flex-wrap: wrap;
-    transition: all ease-in-out .5s;
-}
-.buscar button:hover {
-    transform: scale(0.7);
-}
 /*----------------------SEPARADOR------------------- */
 .separador {
     border-top: rgba(255, 181, 181, 0.425) 1px solid;
@@ -478,7 +272,6 @@ nav a:hover {
     backdrop-filter: blur(5px);
     font-size: 2.0em;
 }
-
 .textocpu2 button {
     border: none;
     width: 30%;
@@ -488,7 +281,6 @@ nav a:hover {
     color: #fff;
     transition: all ease-in-out .5s;
 }
-
 .textocpu button:hover {
     background-color: #ffc374;
     color: #030303;
@@ -503,9 +295,7 @@ nav a:hover {
         top: -90px;
     }
 }
-
 .wave svg {
-
     width: 100%;
     height: 64px;
     stroke: none;
@@ -514,7 +304,6 @@ nav a:hover {
     fill: none;
     background-color: #030303
 }
-
 .espaciadorcont {
     content: "";
     width: 20%;
@@ -532,61 +321,7 @@ nav a:hover {
     background: rgb(3, 3, 3);
     background: rgb(3, 3, 3);
 }
-
 /* FOOTER////////////////////////// */
-
-footer {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #030303;
-    border-bottom: #fff 2px solid;
-}
-
-footer img {
-    width: 300px;
-    height: 150px;
-}
-
-.iconosredes a>i {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 6px;
-    margin: 5px;
-
-
-}
-
-.iconosredes a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.contenidofooter {
-    display: flex;
-}
-
-.contenidofooter li {
-    list-style: none;
-    padding: 10px;
-    color: #fff;
-    border-top: #ffffff 2px solid;
-    transition: border-top 1s ease 0s;
-}
-
-.contenidofooter li {
-    border-top: #fffcfc 0.5px solid;
-
-}
-
 .comentarios {
     background: #030303;
     color: #fff;
