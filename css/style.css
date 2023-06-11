@@ -183,7 +183,6 @@ html {
     animation: movimiento 4s linear infinite;
     filter: drop-shadow(-42px 25px 0px #ff9e1b);
 }
-
 .contenedor2 .imagencpu2{
     display: flex;
     position: relative;
@@ -270,7 +269,6 @@ html {
     z-index: 0;
 }
 @keyframes movimiento {
-
     50% {
         right: 30px;
         top: -90px;
