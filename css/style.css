@@ -253,18 +253,25 @@ html {
     background-color: #03030341;
     border-radius: 6px;
 }
-.textocpu2 button {
-    border: none;
-    width: 30%;
+.hoverproduct{
+    
+    width: 50%;
+    height: 30px;
     border-radius: 10px;
     background-color: #1b50ff;
     border: #fff 2px solid;
-    color: #fff;
     transition: all ease-in-out .5s;
+    
 }
-.textocpu button:hover {
-    background-color: #ffc374;
-    color: #030303;
+.hoverproduct a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.7em,0.5vh,0.9em);
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    padding-top: 4px;
 }
 .carousel-control-next, .carousel-control-prev{
     z-index: 0;
@@ -419,6 +426,14 @@ html {
     .contenedor2{
         height: 350px;
     }
+    .hoverproduct{
+        height: 20px;
+        width: 50%;
+    }
+    .hoverproduct a{
+        padding: 0;
+       
+    }
 
     /* FOOTER CSS */
 }
@@ -453,6 +468,13 @@ html {
     .contenedor3 .textocpu p {
         font-size: 1.2em;
     }    
+    .hoverproduct{
+        height: 20px;
+    }
+    .hoverproduct a{
+        padding: 0;
+       
+    }
 }
 @media (max-width:700px) {
     .contenidoproduc .pccomp {
@@ -592,6 +614,13 @@ html {
     }
     .contenedor2 .textocpu2 h1{
         font-size: 1.2em;
+    }
+    .hoverproduct{
+        height: 20px;
+       
+    }
+    .hoverproduct a{
+        padding: 0;
     }
 
 }

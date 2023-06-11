@@ -166,9 +166,12 @@ body{
     border: #dddddd 1px solid;
 }
 .hoverproduc a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
     text-decoration: none;
-    
+    width: 100%;
     color: #fff;
 }
 .producreltext{
