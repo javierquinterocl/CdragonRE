@@ -78,8 +78,7 @@ html {
     width: 100%;
     display: block;
     flex-wrap: wrap;
-    background-image: url(../img/bg-panoramic.jpg);
-    background-position: fixed;
+    background-color: #030303;
 }
 .contenidoproduc {
     display: flex;
@@ -249,8 +248,10 @@ html {
 }
 
 .contenedor2 .textocpu2 p {
-    color: #ffffffbd;
+    color: #fffbfb;
     font-size: 2.0em;
+    background-color: #03030341;
+    border-radius: 6px;
 }
 .textocpu2 button {
     border: none;
